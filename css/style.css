@@ -7,12 +7,12 @@ reseting css rules - AJUSTANDO O INDEX
 ELEMENTOS RESPONSÁVEIS POR CADA PARTE DO SIT
 */
 * {
-  margin: 0px;
+  margin: 0x;
   padding: 0px;
   box-sizing: border-box;
   outline: none;
   font-family: "Roboto", sans-serif;
-  
+
 }
 
 :root { /* BASE */ 
@@ -45,8 +45,10 @@ html,body {
 
 header {  /* 2ª camada frame  - */ 
   width: 100%;
-  height: 750px;
-  background: rgb(218, 215, 247);
+  height: 686px;
+  background-image: url("https://cdn.wallpapersafari.com/66/21/Di4NGj.jpg ");background-size: auto, auto;
+  background-color: #cccccc;
+  
 }
 
 .content {   /* PAINEL DO CABEÇALHO */
@@ -55,12 +57,12 @@ header {  /* 2ª camada frame  - */
   margin: auto;
   display: 100px; /* POSIÇÃO NO FRAME: inline, block e inlin-block*/
   flex-direction: column;
-  padding: 5px;
+  padding: -15px;
 }
 
 nav { /* POSICIONAMENTO  PAINEL DO CABEÇALHO */
   width: 50%;
-  height: 50px;
+  height: 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,7 +76,7 @@ nav ul {
 
 nav ul li {   /* POSICIONAMENTO   */
   list-style: none;
-  padding: 7px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -90,27 +92,28 @@ nav ul li a:hover {
 nav ul button { /* Botão login principal */
   border: 3px solid var(--yellow);
   background: var(--blue);
-  padding: 1px 30px;
+  padding: 0px 70px;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 400px;
   color: var(--yellow-light);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 nav ul button:hover { /* Efeito do Botão login principal */
-  border: 3px solid var(--blue);
+  border: 1px solid var(--blue);
   transition: background color 0.6s;
-  background: var(--yellow);
-  color: var(--bl);
+  background-image: url("https://thumbs.dreamstime.com/b/o-pl%C3%A1stico-interior-da-textura-do-carro-encanta-37093547.jpg"); 
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 .content .header-block { /* header = cabeçalho: início do site. chamaris! */
   max-width: 1000px;
   min-width: 300px;
-  height: 500px;
+  height: 400px;
   background: var(--blue);
-  border-radius: 100px;
+  border-radius: 10px;
   box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -121,7 +124,7 @@ nav ul button:hover { /* Efeito do Botão login principal */
 
 .header-block .text { /* POSIÇÃO ELEMENTOS/CABEÇALHO CAIXA AZUL */
   position: absolute;
-  bottom: 27%;
+  bottom: 10%;
   left: -12%;
   transform: translateX(1px);
   transition: transform 1s;
@@ -131,18 +134,18 @@ nav ul button:hover { /* Efeito do Botão login principal */
 .header-block img { /* Imagem cabeçalho */
   width: 100%;
   position: absolute;
-  right: -80%;
-  bottom: -30%;
+  right: -90%;
+  bottom: -5%;
   }
 
 .header-block .text h1 {  /* cabeçalho */
   color: var(--yellow);
-  margin-bottom: 10px;
+  margin-bottom: -10px;
   text-align: center;
   transform: translateX(150px);
   transition: transform 1s; /* movimento suave das palavras */
   font-family:  chiller;
-  font-size:100px;
+  font-size:90px;
 }
 
 .header-block .text h2 {  /* cabeçalho */
@@ -168,8 +171,8 @@ nav ul button:hover { /* Efeito do Botão login principal */
 /* Product Catalog */
 
 section .catalog {
-  width: 100vw;
-  padding: 100px;
+  width: 10vw;
+  padding: 10px;
 }
 
 section .filter-card { /* barra de procura/search --> 01 */
@@ -215,7 +218,7 @@ section .filter-card { /* barra de procura/search --> 01 */
 }
 
 section .card-wrapper { /* dimencionamento do local das imagens carros */
-  max-width: 850px;
+  max-width: 875px;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -227,6 +230,7 @@ section .card-item { /*  Carros em cartão */
   height: 450px;
   border-radius: 10px;
   border: 4px solid var(--blue);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/695/205/non_2x/abstract-digital-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-free-vector.jpg");
 
   display: flex;
   flex-direction: column;
@@ -286,18 +290,18 @@ section .card-item { /*  Carros em cartão */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 10px;
+  padding: 50px 1px;
 }
 
 .about-content { /* COMPLEMENTAÇÃO A POSIÇÃO E TAMANHO DO SITE */ 
-  max-width: 1000px;
+  max-width: 980px;
   min-width: 300px;
-  height: 600px;
+  height: 500px;
   background: #ff0080;
   margin: 0 auto;
   border-radius: 8px;
   z-index: 200;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -305,34 +309,34 @@ section .card-item { /*  Carros em cartão */
 }
 
 .left { /* PREENCHIMENTO LADO ESQUERDO */
-  width: 0%;
-  min-width: 300px;
-  height: 100%;
+  width: 25%;
+  min-width: 32px;
+  height: 90%;
   background: #000000a1;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .right {  /* PREENCHIMENTO LADO DIREITO */
-  width: 60%;
-  height: 100%;
+  width: 70%;
+  height: 125%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 0%;
+  padding-top:-150PX;
   }
 
 .right h3 {
   text-align: left;
   width: 90%;
   margin-bottom: 20px;
-  font-family: chiller; font-size: 50px;;
+  font-family: chiller; font-size: 40px;;
 }
 
 .right p {
-  max-width: 90%;
+  max-width: 75%;
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-align: left;
   color: rgba(0, 0, 0, 0.4);
 }
@@ -397,7 +401,7 @@ footer .main {
   width: 100%;
   height: 200px;
   background: var(--orange);
-  padding: 30px 0px;
+  padding: 5px 0px;
 }
 
 .footer-links {
